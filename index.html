@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore a física do átomo ao cosmos: grandes físicos, teorias, fenômenos do cotidiano e imagens do universo.">
+  <meta name="theme-color" content="#0b111c">
+  <title>Física em Foco — Do átomo ao cosmos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="pagina" id="inicio">
+    <header class="cabecalho">
+      <a class="logo" href="#inicio" aria-label="Física em Foco — início">
+        <img src="img/logo.svg" alt="" width="48" height="48">
+        <span>Física em Foco</span>
+      </a>
+      <p class="info"><span aria-hidden="true">⚛</span> Teorias que explicam o universo</p>
+      <a class="info info-contato" href="mailto:contato@fisicaemfoco.com"><span aria-hidden="true">✉</span> contato@fisicaemfoco.com</a>
+    </header>
+
+    <nav class="menu" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#universo">Universo</a></li>
+        <li><a href="#localizacao">Localização</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <main id="conteudo" tabindex="-1">
+      <section class="corpo" aria-labelledby="titulo-principal">
+        <div class="texto">
+          <h1 id="titulo-principal">Do átomo ao cosmos</h1>
+          <p id="fisicos">
+            A física busca entender as regras que governam a matéria,
+            a energia, o espaço e o tempo. Com Isaac Newton, a
+            gravitação universal explicou a queda de uma maçã e
+            a órbita da Lua com a mesma lei.
+          </p>
+          <p id="teorias">
+            No início do século XX, Albert Einstein propôs a
+            Teoria da Relatividade e mostrou que massa e energia
+            se relacionam pela famosa equação E = mc².
+            Ao mesmo tempo, Marie Curie investigava a radioatividade
+            e Max Planck, Niels Bohr e Werner Heisenberg davam os
+            primeiros passos da Mecânica Quântica.
+          </p>
+          <p>
+            Aqui você encontra a história dos grandes físicos
+            e uma explicação simples das teorias que mudaram
+            a forma como enxergamos o universo.
+          </p>
+          <a class="botao" href="#destaques">Explore a física <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="imagem">
+          <img src="img/atomo.svg" alt="Ilustração de um átomo com a equação E = mc²" decoding="async">
+        </div>
+      </section>
+
+      <section class="destaques" id="destaques" aria-labelledby="titulo-destaques">
+        <div class="abertura-secao">
+          <h2 id="titulo-destaques">A física no cotidiano</h2>
+          <p>Três maneiras de olhar com mais atenção para o que está ao nosso redor.</p>
+        </div>
+        <div class="lista-destaques">
+          <article class="destaque">
+            <svg class="icone-destaque" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M12 10h40M32 10l15 30M12 54h40" />
+              <circle cx="49" cy="45" r="6" />
+              <path d="M16 43a24 24 0 0 0 14 6" stroke-dasharray="3 5" />
+            </svg>
+            <h3>Por que as coisas se movem?</h3>
+            <p>Uma bola rolando, uma bicicleta freando, um pêndulo oscilando. As leis de Newton ajudam a entender como as forças alteram o movimento dos corpos.</p>
+          </article>
+          <article class="destaque">
+            <svg class="icone-destaque" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M32 11 13 50h38ZM3 34h18M21 34l18 5M39 39l22-12M39 39l22 1M39 39l22 14" />
+            </svg>
+            <h3>De onde vêm as cores?</h3>
+            <p>A luz branca reúne diferentes cores. Ao atravessar um prisma, cada uma sofre um desvio diferente, revelando o espectro que também vemos no arco-íris.</p>
+          </article>
+          <article class="destaque">
+            <svg class="icone-destaque" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <circle cx="32" cy="34" r="14" />
+              <ellipse cx="32" cy="34" rx="29" ry="8" transform="rotate(-25 32 34)" />
+              <path d="M48 7v8M44 11h8M11 13v4M9 15h4" />
+            </svg>
+            <h3>O que mantém a Lua em órbita?</h3>
+            <p>A gravidade da Terra curva continuamente o caminho da Lua. A mesma interação que faz um objeto cair ajuda a explicar o movimento dos astros.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="galeria-cosmos" id="universo" aria-labelledby="titulo-galeria">
+        <div class="abertura-secao">
+          <h2 id="titulo-galeria">O universo em imagens</h2>
+          <p>Dos detalhes de uma nebulosa à imensidão do céu noturno. Clique nas imagens para ampliar.</p>
+        </div>
+        <div class="grade-cosmos">
+          <figure class="foto-cosmos">
+            <a href="img/nuvens-e-estrelas.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir a imagem Nuvens e estrelas em tamanho original, em uma nova aba">
+              <img src="img/nuvens-e-estrelas.jpg" width="1920" height="1200" loading="lazy" decoding="async" alt="Nuvens azuladas e avermelhadas com estrelas brilhantes espalhadas pela imagem">
+            </a>
+            <figcaption><strong>Nuvens e estrelas</strong><span>Contrastes de luz, cor e sombra no espaço.</span></figcaption>
+          </figure>
+          <figure class="foto-cosmos foto-cosmos-vertical">
+            <a href="img/ceu-noturno.jpg" target="_blank" rel="noopener noreferrer" aria-label="Abrir a imagem O céu noturno em tamanho original, em uma nova aba">
+              <img src="img/ceu-noturno.jpg" width="452" height="679" loading="lazy" decoding="async" alt="Céu noturno repleto de estrelas, atravessado por uma faixa luminosa que se estende até o horizonte">
+            </a>
+            <figcaption><strong>O céu noturno</strong><span>Um convite a olhar para cima.</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="chamada" aria-labelledby="titulo-chamada">
+        <div class="chamada-texto">
+          <h2 id="titulo-chamada">Qual é a sua pergunta sobre o universo?</h2>
+          <p>Tem uma dúvida sobre física ou uma ideia para os próximos temas? Envie sua sugestão e ajude a escolher o que vamos explorar por aqui.</p>
+        </div>
+        <a class="botao botao-chamada" href="mailto:contato@fisicaemfoco.com?subject=Sugest%C3%A3o%20de%20tema">Enviar uma sugestão <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="localizacao" id="localizacao" aria-labelledby="titulo-localizacao">
+        <div class="abertura-secao">
+          <h2 id="titulo-localizacao">Onde fica a NASA?</h2>
+          <p>Conheça a localização da sede da agência espacial norte-americana.</p>
+        </div>
+        <div class="localizacao-grade">
+          <figure class="localizacao-mapa">
+            <iframe
+              src="https://maps.google.com/maps?q=NASA%20Headquarters%2C%20300%20E%20Street%20SW%2C%20Washington%20DC&amp;z=16&amp;output=embed"
+              title="Mapa da localização da sede da NASA em Washington, D.C."
+              width="600" height="340" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            ></iframe>
+            <figcaption>Sede da NASA — Washington, D.C., Estados Unidos.</figcaption>
+          </figure>
+          <div class="localizacao-info">
+            <span class="etiqueta">Exploração espacial</span>
+            <h3>Sede da NASA</h3>
+            <p class="localizacao-edificio"><strong>Edifício</strong><br>Mary W. Jackson NASA Headquarters</p>
+            <p class="localizacao-endereco">
+              <strong>Endereço</strong><br>
+              300 E Street SW<br>
+              Washington, D.C.<br>
+              Código postal: 20546<br>
+              Estados Unidos
+            </p>
+            <a class="botao" href="https://www.google.com/maps/search/?api=1&amp;query=NASA%20Headquarters%2C%20300%20E%20Street%20SW%2C%20Washington%20DC" target="_blank" rel="noopener noreferrer">
+              Abrir no Google Maps <span aria-hidden="true">↗</span><span class="sr-only"> (nova aba)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape" id="contato">
+      <div class="coluna">
+        <h2>Explore a página</h2>
+        <ul>
+          <li><a href="#fisicos">Grandes físicos</a></li>
+          <li><a href="#teorias">Teorias da física</a></li>
+          <li><a href="#universo">Universo em imagens</a></li>
+        </ul>
+      </div>
+      <div class="coluna">
+        <h2>Fale conosco</h2>
+        <ul>
+          <li><a href="mailto:contato@fisicaemfoco.com"><span aria-hidden="true">✉</span> contato@fisicaemfoco.com</a></li>
+          <li><span aria-hidden="true">☎</span> (49) 0000-0000</li>
+        </ul>
+      </div>
+      <div class="coluna">
+        <h2>Redes sociais</h2>
+        <!-- Substitua os textos por links quando houver perfis reais. -->
+        <ul>
+          <li>Instagram <span class="em-breve">— em breve</span></li>
+          <li>YouTube <span class="em-breve">— em breve</span></li>
+          <li>X (Twitter) <span class="em-breve">— em breve</span></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

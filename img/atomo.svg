@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 245">
+  <g fill="none" stroke="#d0ab76" stroke-width="1.5">
+    <ellipse cx="120" cy="96" rx="100" ry="35"/>
+    <ellipse cx="120" cy="96" rx="100" ry="35" transform="rotate(60 120 96)"/>
+    <ellipse cx="120" cy="96" rx="100" ry="35" transform="rotate(120 120 96)"/>
+  </g>
+  <g fill="#f1ece2">
+    <circle cx="120" cy="96" r="6"/>
+    <circle cx="220" cy="96" r="4"/>
+    <circle cx="70" cy="9.4" r="4"/>
+    <circle cx="70" cy="182.6" r="4"/>
+    <text x="120" y="230" font-family="Georgia, 'Times New Roman', serif" font-size="30" text-anchor="middle">E = mc²</text>
+  </g>
+</svg>
