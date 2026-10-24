@@ -1,4 +1,3 @@
-/* 1. Cores e estilos gerais */
 :root {
   color-scheme: dark;
   --fundo: #0b111c;
@@ -52,7 +51,6 @@ a:focus-visible, iframe:focus-visible {
 }
 .pular-conteudo:focus { transform: translateY(0); }
 
-/* 2. Cabeçalho e navegação */
 .cabecalho {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -86,7 +84,6 @@ a:focus-visible, iframe:focus-visible {
 .menu a { display: block; padding: .8rem .375rem; min-height: 44px; font-size: .9rem; }
 .menu a:hover { color: var(--destaque); text-decoration: underline; text-underline-offset: 6px; }
 
-/* 3. Apresentação */
 .corpo {
   position: relative;
   isolation: isolate;
@@ -136,7 +133,6 @@ a:focus-visible, iframe:focus-visible {
 .botao:hover { background: var(--destaque-hover); border-color: var(--destaque-hover); }
 .botao > span[aria-hidden="true"] { flex-shrink: 0; }
 
-/* 4. Destaques e galeria */
 .destaques, .galeria-cosmos { padding-block: var(--espaco-secao); border-top: 1px solid var(--linha); }
 .abertura-secao { margin-bottom: clamp(1.75rem, 4vw, 2.375rem); }
 .abertura-secao h2 { font-size: clamp(1.7rem, 3vw, 2.1rem); line-height: 1.25; margin-bottom: .625rem; }
@@ -155,7 +151,6 @@ a:focus-visible, iframe:focus-visible {
 .foto-cosmos figcaption strong { display: block; margin-bottom: .2rem; font-family: var(--fonte-titulo); font-size: 1.2rem; font-weight: normal; color: var(--texto); }
 .foto-cosmos figcaption span { display: block; }
 
-/* 5. Chamada para contato */
 .chamada { display: flex; align-items: center; justify-content: space-between; gap: 2.5rem; padding: 2.375rem 2.25rem; border-top: 2px solid var(--destaque); background: var(--painel); }
 .chamada-texto { min-width: 0; max-width: 630px; }
 .chamada h2 { font-size: clamp(1.5rem, 2.8vw, 1.85rem); line-height: 1.3; margin-bottom: .75rem; }
@@ -163,7 +158,6 @@ a:focus-visible, iframe:focus-visible {
 .botao-chamada { flex-shrink: 0; margin: 0; background: transparent; color: var(--destaque); }
 .botao-chamada:hover { background: var(--destaque); color: var(--tinta); }
 
-/* 6. Localização: mapa e endereço lado a lado no desktop */
 .localizacao { margin-top: var(--espaco-secao); padding-block: var(--espaco-secao); border-top: 1px solid var(--linha); }
 .localizacao-grade {
   display: grid;
@@ -191,7 +185,6 @@ a:focus-visible, iframe:focus-visible {
 .localizacao-info strong { color: var(--texto); font-weight: 600; }
 .localizacao-info .botao { margin-top: 1.5rem; }
 
-/* 7. Rodapé */
 .rodape { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; padding-block: 2.375rem; border-top: 1px solid var(--linha); }
 .coluna { min-width: 0; }
 .coluna h2 { font-size: 1.15rem; margin-bottom: .75rem; }
@@ -200,7 +193,6 @@ a:focus-visible, iframe:focus-visible {
 .coluna a:hover { color: var(--destaque); text-decoration: underline; text-underline-offset: 4px; }
 .em-breve { font-size: .75rem; }
 
-/* 8. Tablets */
 @media (max-width: 992px) {
   body { font-size: 1rem; }
   .cabecalho { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.125rem 1.5rem; }
@@ -227,7 +219,6 @@ a:focus-visible, iframe:focus-visible {
   .localizacao-info { padding: 1.5rem; }
 }
 
-/* 9. Telas pequenas: uma coluna, sem larguras fixas */
 @media (max-width: 700px) {
   .lista-destaques, .grade-cosmos, .localizacao-grade { grid-template-columns: minmax(0, 1fr); }
   .lista-destaques { gap: 1.625rem; }
@@ -259,8 +250,70 @@ a:focus-visible, iframe:focus-visible {
   .rodape { padding-block: 1.875rem; }
 }
 
-/* Movimento suave apenas para quem não solicitou redução de animações. */
 @media (prefers-reduced-motion: no-preference) {
   html { scroll-behavior: smooth; }
   .botao { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+}
+
+.faq {
+  padding-block: var(--espaco-secao);
+  border-top: 1px solid var(--linha);
+}
+
+.faq-lista {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.faq-item {
+  min-width: 0;
+  border: 1px solid var(--linha);
+  background: var(--painel);
+}
+
+.faq-item summary {
+
+  display: list-item;
+  min-height: 56px;
+  padding: 1.25rem 1.5rem;
+  color: var(--texto);
+  font-family: var(--fonte-titulo);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.faq-item summary::marker { color: var(--destaque); }
+.faq-item summary:hover { color: var(--destaque); }
+.faq-item summary:focus-visible {
+  outline: 2px solid var(--destaque);
+  outline-offset: -4px;
+}
+
+.faq-item[open] { border-color: var(--destaque); }
+.faq-item[open] summary {
+  border-bottom: 1px solid var(--linha);
+  color: var(--destaque);
+}
+
+.faq-resposta {
+  padding: 1.25rem 1.5rem;
+  color: var(--secundario);
+  font-size: 1rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.faq-resposta p { max-width: 75ch; }
+
+@media (max-width: 700px) {
+  .faq-item summary {
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+  .faq-resposta { padding: 1rem; }
 }
